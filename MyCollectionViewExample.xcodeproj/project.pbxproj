@@ -22,6 +22,13 @@
 		ED65BD6018A0B6B3009AEB43 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED65BD4418A0B6B2009AEB43 /* CoreData.framework */; };
 		ED65BD6818A0B6B3009AEB43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED65BD6618A0B6B3009AEB43 /* InfoPlist.strings */; };
 		ED65BD6A18A0B6B3009AEB43 /* MyCollectionViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65BD6918A0B6B3009AEB43 /* MyCollectionViewExampleTests.m */; };
+		ED65BD7518A0B720009AEB43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65BD7418A0B720009AEB43 /* ViewController.m */; };
+		ED65BD7818A0BC09009AEB43 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED65BD7718A0BC09009AEB43 /* MyCollectionViewCell.m */; };
+		ED65BD7A18A0BC27009AEB43 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED65BD7918A0BC27009AEB43 /* MyCollectionViewCell.xib */; };
+		ED948D8418A0C90D00349936 /* cricket_ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED948D8018A0C90D00349936 /* cricket_ball@2x.png */; };
+		ED948D8518A0C90D00349936 /* Football_Ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED948D8118A0C90D00349936 /* Football_Ball@2x.png */; };
+		ED948D8618A0C90D00349936 /* football@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED948D8218A0C90D00349936 /* football@2x.png */; };
+		ED948D8718A0C90D00349936 /* Soccer_Ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED948D8318A0C90D00349936 /* Soccer_Ball@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,15 @@
 		ED65BD6518A0B6B3009AEB43 /* MyCollectionViewExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCollectionViewExampleTests-Info.plist"; sourceTree = "<group>"; };
 		ED65BD6718A0B6B3009AEB43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED65BD6918A0B6B3009AEB43 /* MyCollectionViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewExampleTests.m; sourceTree = "<group>"; };
+		ED65BD7318A0B720009AEB43 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ED65BD7418A0B720009AEB43 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ED65BD7618A0BC09009AEB43 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		ED65BD7718A0BC09009AEB43 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		ED65BD7918A0BC27009AEB43 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		ED948D8018A0C90D00349936 /* cricket_ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cricket_ball@2x.png"; sourceTree = "<group>"; };
+		ED948D8118A0C90D00349936 /* Football_Ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Football_Ball@2x.png"; sourceTree = "<group>"; };
+		ED948D8218A0C90D00349936 /* football@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "football@2x.png"; sourceTree = "<group>"; };
+		ED948D8318A0C90D00349936 /* Soccer_Ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Soccer_Ball@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +133,11 @@
 			children = (
 				ED65BD4F18A0B6B2009AEB43 /* AppDelegate.h */,
 				ED65BD5018A0B6B2009AEB43 /* AppDelegate.m */,
+				ED65BD7318A0B720009AEB43 /* ViewController.h */,
+				ED65BD7418A0B720009AEB43 /* ViewController.m */,
+				ED65BD7618A0BC09009AEB43 /* MyCollectionViewCell.h */,
+				ED65BD7718A0BC09009AEB43 /* MyCollectionViewCell.m */,
+				ED65BD7918A0BC27009AEB43 /* MyCollectionViewCell.xib */,
 				ED65BD5518A0B6B2009AEB43 /* Images.xcassets */,
 				ED65BD5218A0B6B2009AEB43 /* MyCollectionViewExample.xcdatamodeld */,
 				ED65BD4718A0B6B2009AEB43 /* Supporting Files */,
@@ -127,6 +148,7 @@
 		ED65BD4718A0B6B2009AEB43 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED65BD8718A0BEB1009AEB43 /* Images */,
 				ED65BD4818A0B6B2009AEB43 /* MyCollectionViewExample-Info.plist */,
 				ED65BD4918A0B6B2009AEB43 /* InfoPlist.strings */,
 				ED65BD4C18A0B6B2009AEB43 /* main.m */,
@@ -151,6 +173,17 @@
 				ED65BD6618A0B6B3009AEB43 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED65BD8718A0BEB1009AEB43 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ED948D8018A0C90D00349936 /* cricket_ball@2x.png */,
+				ED948D8118A0C90D00349936 /* Football_Ball@2x.png */,
+				ED948D8218A0C90D00349936 /* football@2x.png */,
+				ED948D8318A0C90D00349936 /* Soccer_Ball@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +263,11 @@
 			files = (
 				ED65BD4B18A0B6B2009AEB43 /* InfoPlist.strings in Resources */,
 				ED65BD5618A0B6B2009AEB43 /* Images.xcassets in Resources */,
+				ED948D8518A0C90D00349936 /* Football_Ball@2x.png in Resources */,
+				ED65BD7A18A0BC27009AEB43 /* MyCollectionViewCell.xib in Resources */,
+				ED948D8418A0C90D00349936 /* cricket_ball@2x.png in Resources */,
+				ED948D8618A0C90D00349936 /* football@2x.png in Resources */,
+				ED948D8718A0C90D00349936 /* Soccer_Ball@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +288,9 @@
 			files = (
 				ED65BD5118A0B6B2009AEB43 /* AppDelegate.m in Sources */,
 				ED65BD4D18A0B6B2009AEB43 /* main.m in Sources */,
+				ED65BD7518A0B720009AEB43 /* ViewController.m in Sources */,
 				ED65BD5418A0B6B2009AEB43 /* MyCollectionViewExample.xcdatamodeld in Sources */,
+				ED65BD7818A0BC09009AEB43 /* MyCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +493,7 @@
 				ED65BD6F18A0B6B3009AEB43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED65BD7018A0B6B3009AEB43 /* Build configuration list for PBXNativeTarget "MyCollectionViewExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +502,7 @@
 				ED65BD7218A0B6B3009AEB43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -18,8 +19,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    ViewController *viewController = [[ViewController alloc]
+                                      initWithCollectionViewLayout:[self flowLayout]];
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    /* Set the collection view as the root view controller of our window */
+    self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
@@ -145,5 +154,18 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
+
+
+- (UICollectionViewFlowLayout *) flowLayout{ UICollectionViewFlowLayout *flowLayout =
+    [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.minimumLineSpacing = 5.0f;
+    flowLayout.minimumInteritemSpacing = 5.0f;
+    flowLayout.itemSize = CGSizeMake(50.0f, 50.0f);
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    flowLayout.sectionInset = UIEdgeInsetsMake(20.0f, 20.0f, 10.0f, 10.0f);
+    return flowLayout;
+
+}
+
 
 @end
